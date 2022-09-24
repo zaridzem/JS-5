@@ -1,0 +1,22 @@
+@media (max-width: 850px) {
+  .nav-ul {
+    display: none;
+  }
+  .burgerbar {
+    display: flex;
+    margin-top: 20px;
+  }
+  .nav-ul.nav-active {
+    height: 100vh;
+    position: absolute;
+    top: 70px;
+    left: 30%;
+    width: 100%;
+    line-height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 80px;
+  }
+} ;

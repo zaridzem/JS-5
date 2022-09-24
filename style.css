@@ -1,0 +1,120 @@
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.burgerbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 5px;
+  right: 20px;
+  width: 40px;
+  height: 30px;
+  padding: 2px;
+  cursor: pointer;
+  display: none;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: transform 0.2s ease-out;
+}
+
+.li-active .line1 {
+  transform: scale(1) rotate(-45deg) translate(-6px, 4px);
+}
+
+.li-active .line2 {
+  display: none;
+}
+
+.li-active .line3 {
+  transform: scale(1) rotate(45deg) translate(-6px, -4px);
+}
+
+.logotext {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 15px;
+}
+header {
+  padding: 20px;
+  background-color: lightseagreen;
+}
+
+.navigation {
+  max-width: 700px;
+  width: 100%;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-a {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+
+#input-block {
+  background-color: rgb(178, 241, 238);
+  margin: 30px;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border: none;
+}
+
+#input-block:focus {
+  outline: none;
+}
+
+#addbtn,
+#deleteall {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  border-width: 2px;
+  color: white;
+  background-color: lightseagreen;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+#deleteall {
+  margin-left: 30px;
+}
+#input-block::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.delete1 {
+  color: lightseagreen;
+  margin-left: 50px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.li-active {
+  margin: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
