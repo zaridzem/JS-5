@@ -23,7 +23,7 @@ formelement.addEventListener("submit", function (event) {
   li.classList.add("li-active");
 
   let deleteone = document.createElement("i");
-  deleteone.classList.add("fa-solid", "fa-trash", "delete1");
+  deleteone.classList.add("fa-solid", "fa-trash", "deleteone1");
   deleteone.addEventListener("click", function () {
     li.remove();
   });
